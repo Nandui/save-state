@@ -1,211 +1,154 @@
 import type { BriefingMeta, Story } from "./types";
 
-/** Curated 19 Aug 2026 snapshot. Times are ISO-8601 (UTC) from the source RSS or byline. */
+/** Curated 20 Aug 2026 snapshot. Times are ISO-8601 (UTC) from the source RSS or byline. */
 export const briefingMeta: BriefingMeta = {
-  editionDate: "2026-08-19",
-  editionLabel: "Wednesday, 19 August 2026",
-  briefedAt: "2026-08-19T22:25:00.000Z",
-  briefedAtLabel: "11:25pm IST",
+  editionDate: "2026-08-20",
+  editionLabel: "Thursday, 20 August 2026",
+  briefedAt: "2026-08-20T20:50:00.000Z",
+  briefedAtLabel: "9:50pm IST",
   timezone: "Europe/Dublin",
 };
 
-export const briefingCopy = `The week before Rockstar’s official GTA 6 look on Netflix, a group calling itself Cyberleek has flooded the internet with what looks like real gameplay — and Take-Two is wiping it as fast as it lands. Around that circus sits a quieter argument about ownership: no physical discs, a warehouse breach at Pokémon Center, and a consumer campaign telling people not to fund the leakers. Elsewhere the industry is still mid-contraction — Sony is walking a Horizon live-service project back toward a regular co-op game, EA staff are uneasy under new Saudi ownership, and veterans of immersive sims are opening a studio while Bethesda workers keep rallying. If you only have a minute, the day is leaks, labour, and a few games that are finally ready to play.`;
+export const briefingCopy = `Thursday belongs to the GTA 6 leak spiral: Cyberleek posted a crop-duster flyover clip that ends with bullets spelling “LEEK” into a wall, Rockstar has gone dark across every channel for 48 straight hours, and Polygon has the group’s manifesto railing against disc-free releases and the $100 Ultimate Edition. Away from that circus, Nintendo confirmed the Switch 2’s UK and Irish price rise for 1 September, a rogue Windows 11 patch is crashing Arc Raiders and The Finals, and Rock Paper Shotgun has two reviews landing the same day — STALKER 2’s Cost of Hope expansion and Mortal Shell 2’s full launch. Subnautica 2 and Splatoon 3 both picked up fresh updates too.`;
 
 export const stories: Story[] = [
   {
-    id: "gta6-cyberleek",
+    id: "gta6-playable-build",
     category: "Industry",
-    headline: "GTA 6 leaks keep landing as Cyberleek taunts Rockstar ahead of the Netflix reveal",
+    headline: "New GTA 6 footage suggests Cyberleek is flying through a genuinely playable build",
     summary:
-      "A group calling itself Cyberleek has posted several clips of what appears to be Grand Theft Auto 6 gameplay, a week before Rockstar’s official extended look on Netflix on 27 August. Take-Two is issuing takedowns almost immediately; later clips are watermarked with lines about the lack of a physical disc. Stop Killing Games has publicly told people not to send the leakers money — they are also promoting a memecoin — and said illegal leaks do nothing for consumer rights.",
+      "The latest clip is a serene crop-duster flight between the Keys and Vice City, with Jason flicking through radio stations, before it ends with him firing bullets into a wall that spell out “LEEK.” It’s the clearest evidence yet that the leaker has an actual playable build rather than rendered dumps — Rockstar’s takedown campaign keeps missing new mirrors as fast as it lands.",
+    source: "Kotaku",
+    sourceUrl:
+      "https://kotaku.com/gta-6-footage-playable-build-cyberleek-radio-stations-flying-2000726124",
+    publishedAt: "2026-08-20T14:30:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/gta6-flying.jpg",
+  },
+  {
+    id: "gta6-rockstar-silent",
+    category: "Industry",
+    headline: "Rockstar has gone completely dark on social media as the GTA 6 leaks pile up",
+    summary:
+      "No tweets, no Instagram activity, nothing on Discord, and the official newswire hasn’t updated since 14 August. Rockstar even skipped its usually clockwork Tuesday post — 48 hours of total silence through the worst run of Cyberleek clips yet, with Kotaku’s repeated pings going unanswered.",
+    source: "Kotaku",
+    sourceUrl:
+      "https://kotaku.com/rockstar-games-hasnt-posted-anything-online-in-48-hours-as-gta-6-leaks-keep-getting-worse-2000726182",
+    publishedAt: "2026-08-20T15:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://kotaku.com/app/uploads/2026/07/gta-pc-3.jpg",
+  },
+  {
+    id: "gta6-leak-map",
+    category: "Industry",
+    headline: "The leaked GTA 6 map shows Leonida split into five counties, and Vice Dale is the dense one",
+    summary:
+      "Alongside clips of Jason roughing up a civilian roadside and playing basketball at a Safe House, an alleged full map surfaced showing the Florida-inspired state of Leonida broken into five explorable counties. Vice Dale County — home to Vice City — is by far the most detailed of the five, though it’s unclear whether the footage is from a recent or an old build.",
+    source: "Eurogamer",
+    sourceUrl: "https://www.eurogamer.net/gta-6-leaked-gameplay-map-cyberleek",
+    publishedAt: "2026-08-19T10:49:00.000Z",
+    imageUrl:
+      "https://assetsio.gnwcdn.com/grand-theft-auto-6-leak.jpg?width=570&quality=85&format=jpg&dpr=3&auto=webp",
+  },
+  {
+    id: "gta6-cyberleek-manifesto",
+    category: "Industry",
+    headline: "Cyberleek published a manifesto attacking Rockstar’s no-disc policy — then leaked more clips to prove it meant business",
+    summary:
+      "The hacktivist group frames its leaks as protest against Take-Two going disc-free and against the $100 Ultimate Edition’s exclusive cosmetics and in-game shop. After the manifesto dropped, Cyberleek followed through on its threats with a two-minute clip of Jason tasering people, watermarked “No physical discs? Then more leeks!”, then a second showing him stabbing a police officer.",
     source: "Polygon",
     sourceUrl: "https://www.polygon.com/gta-6-leaks-unmoderated-cyberleek-stop-killing-games/",
     publishedAt: "2026-08-19T17:41:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ultimate_edition_grotti_cheetah_01.jpg?w=1600&h=900&fit=crop",
+    imageUrl:
+      "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ultimate_edition_grotti_cheetah_01.jpg?w=1600&h=900&fit=crop",
   },
   {
-    id: "gta6-wanted",
-    category: "Industry",
-    headline: "Leaked footage points to a six-star wanted system — and cops who remember your clothes",
-    summary:
-      "Clips Polygon reviewed before they were pulled show a six-star wanted meter, last seen in GTA 4, filling after a roadside assault. Police shout over megaphones before any stars appear, which reads more like a warning than a sudden chase. Three icons under the stars — clothes, body, vehicle — suggest the game tracks what officers actually know about you, not just a single heat number.",
-    source: "Polygon",
-    sourceUrl: "https://www.polygon.com/gta-6-leak-wanted-level-six-stars-five-how-does-it-work-cops-tanks/",
-    publishedAt: "2026-08-19T16:00:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/vintage_vice_city_pack_exclusive_looks_04.jpg?w=1600&h=900&fit=crop",
-  },
-  {
-    id: "horizon-reboot",
-    category: "Industry",
-    headline: "Sony is reportedly rebooting Horizon Hunters Gathering after poor playtests",
-    summary:
-      "Bloomberg says Guerrilla’s live-service Horizon spin-off tested badly this year and is being rebuilt as a smaller co-op game with a proper story. Most of the team has already been moved; a remnant has until a December milestone to convince Sony executives the new version is worth keeping. A small Guerrilla group is still on the next single-player Horizon, which remains years away.",
-    source: "PC Gamer",
-    sourceUrl:
-      "https://www.pcgamer.com/games/action/sony-reportedly-reverses-course-on-live-service-co-op-horizon-game-after-negative-player-feedback/",
-    publishedAt: "2026-08-19T19:54:21.000Z",
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/RkCyjZrKmQaRqet4teYsYi-2560-80.jpg",
-    imageAlt: "Horizon Hunters Gathering trailer still - four hunters, gathering",
-  },
-  {
-    id: "black-pony",
-    category: "Industry",
-    headline: "Harvey Smith opens Black Pony Immersive, a new studio built for systemic first-person games",
-    summary:
-      "The Dishonored and Deus Ex veteran has teamed with producer Ben Horne and longtime collaborator Ricardo Bare to start a studio whose name does not hide the brief. They want first-person action RPGs in “well-realized worlds” where systems, not set pieces, do the work — immersive sims, described carefully because that genre is commercially thin. The site’s “through the looking glass” line is a nod to Looking Glass Studios, not Lewis Carroll.",
-    source: "PC Gamer",
-    sourceUrl:
-      "https://www.pcgamer.com/gaming-industry/dishonored-co-creator-harvey-smith-launches-a-new-studio-and-it-literally-has-the-word-immersive-in-the-name/",
-    publishedAt: "2026-08-19T15:18:32.000Z",
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/NmxHVsZUHJXf4j7Vvmod63-1920-80.jpg",
-    imageAlt: "Harvey Smith",
-  },
-  {
-    id: "ea-saudi",
-    category: "Industry",
-    headline: "EA staff brace for quieter censorship after the Saudi buyout closes",
-    summary:
-      "The Public Investment Fund’s purchase of Electronic Arts closed this month. Game Developer found employees who expect fewer signed projects that sit poorly with the new owners, rather than an open content ban. Several said the moral case is obvious and the job market is not — and that the deal’s debt still makes large layoffs feel inevitable even if nothing has been announced yet.",
-    source: "PC Gamer",
-    sourceUrl:
-      "https://www.pcgamer.com/gaming-industry/ea-employees-brace-for-the-worst-under-saudi-ownership-hard-to-feel-good-about-being-bought-out-by-a-regime-thats-very-much-at-odds-with-progressive-society/",
-    publishedAt: "2026-08-19T17:58:26.000Z",
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/TxcJhgJtWhsRvQvitVgmmJ-2560-80.jpg",
-    imageAlt: "The silhouette of attendees are seen dancing in front of the Electronic Arts Inc. (EA) logo displayed on a screen during the company",
-  },
-  {
-    id: "console-price",
+    id: "switch2-price-uk-ireland",
     category: "Hardware",
-    headline: "Ampere: a $1,000 PS6 and Xbox Helix could mean 39 million fewer consoles sold",
+    headline: "Nintendo confirms the Switch 2 price rise for the UK and Ireland, effective 1 September",
     summary:
-      "If the next Sony and Microsoft machines ship at $1,000 instead of $700, Ampere Analysis forecasts about 39 million fewer units over five years and roughly $3.4 billion less player spending over three. The firm’s outs — delay past the rumoured 2028 window, eat the subsidy, or redesign around something cheaper than raw power — all look politically hard. Nintendo’s Switch 2, heading toward a $500 street price, is the cheap machine in the room.",
-    source: "Kotaku",
-    sourceUrl:
-      "https://kotaku.com/dire-forecast-predicts-39-million-fewer-consoles-sold-if-ps6-and-xbox-helix-are-1000-2000725914",
-    publishedAt: "2026-08-19T18:45:31.000Z",
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/GettyImages-477358798-1200x675.jpg",
+      "The UK price climbs from £395.99 to £419.99, and Ireland moves from €469.99 to €499.99, matching the wider Euro-zone increase Nintendo first flagged back in May. Nintendo Life notes it’s still a gentler bump than what the PS5, Xbox Series X|S, or even a Steam Deck now cost.",
+    source: "Nintendo Life",
+    sourceUrl: "https://www.nintendolife.com/news/2026/08/nintendo-details-switch-2-price-increase-for-the-uk",
+    publishedAt: "2026-08-20T13:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://images.nintendolife.com/85205435c1be0/switch-2.900x.jpg",
   },
   {
-    id: "pokemon-center-breach",
-    category: "Industry",
-    headline: "Pokémon Center hit by the same CEVA breach that reached Valve’s Steam hardware",
+    id: "windows11-game-crashes",
+    category: "Hardware",
+    headline: "A Windows 11 update is crashing Arc Raiders and The Finals — Embark has a fix while Microsoft investigates",
     summary:
-      "CEVA Logistics, the warehouse contractor already known to have exposed European Steam Machine and controller orders, has now told Pokémon Center that UK and German customers are in the same pile. Some merchandise orders are being cancelled. One shipping partner, two very different storefronts — and another week where “your data left the building” is ordinary industry news.",
-    source: "Kotaku",
-    sourceUrl:
-      "https://kotaku.com/pokemon-center-hack-data-breach-valve-orders-cancelled-ceva-2000725795",
-    publishedAt: "2026-08-19T11:00:23.000Z",
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/pokemoncenter2.jpg",
-  },
-  {
-    id: "pokemon-mew",
-    category: "Industry",
-    headline: "A rumoured RGB Mew may be the rarest card in Pokémon’s 30th anniversary set",
-    summary:
-      "TCG creator TheCardScience says a contact at printer Millennium Print Group confirmed a new Mew with an “RGB” rarity mark, in three photo-negative tints. The claimed pull rate is one in 20,000 packs — far thinner than current chase cards. The 30th Celebration set is due 16 September; packs are already leaking, and nobody will know the real odds until millions of them are opened.",
-    source: "Kotaku",
-    sourceUrl:
-      "https://kotaku.com/pokemons-30th-anniversary-set-might-be-making-a-mysterious-new-mew-card-the-rarest-ever-2000725936",
-    publishedAt: "2026-08-19T21:37:29.000Z",
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/mews-1200x675.jpg",
-  },
-  {
-    id: "stalker2-20",
-    category: "Releases",
-    headline: "STALKER 2’s 2.0 update is the version people have been waiting two years to start",
-    summary:
-      "GSC’s engine-level 2.0 patch lands tomorrow with the Cost of Hope expansion, moving Heart of Chornobyl onto a newer Unreal Engine 5 build. Hands-on reports say outdoor hitching is largely gone and interiors finally have the contrast the Zone always wanted. If you bought it at launch and bounced, this is the honest re-entry point — not another “we fixed 1,400 bugs” patch note.",
+      "Games patched after the 11 August update have been freezing, closing without warning, or throwing EXCEPTION_ACCESS_VIOLATION errors, traced to the inpoutx64.sys driver. Microsoft has only confirmed the issue in Arc Raiders, Marvel Tōkon: Fighting Souls, and The Finals so far; Embark’s workaround is to delete the inpoutx64 service and driver file, or simply disable the service and reboot.",
     source: "PC Gamer",
     sourceUrl:
-      "https://www.pcgamer.com/games/fps/stop-waiting-to-play-stalker-2-the-2-0-update-makes-it-the-game-its-wanted-to-be-for-2-years/",
-    publishedAt: "2026-08-19T15:13:20.000Z",
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/TxyQx7gZ5aUd7Ssx9uX5ri-1920-80.jpg",
-    imageAlt: "Scar from Stalker 2, bathed in ominous red light.",
+      "https://www.pcgamer.com/hardware/controllers/the-latest-windows-11-update-is-borking-some-multiplayer-games-but-arc-raiders-developer-has-a-quick-workaround/",
+    publishedAt: "2026-08-20T11:00:04.000Z",
+    imageUrl: "https://cdn.mos.cms.futurecdn.net/cfRFGsMSVs36ZLNFgKUbaU.jpg",
   },
   {
-    id: "isaac-gta",
-    category: "Releases",
-    headline: "The Binding of Isaac: Repentance + Online is coming the same day as GTA 6",
+    id: "stalker2-cost-of-hope-review",
+    category: "Reviews",
+    headline: "STALKER 2: Cost of Hope review — an expanded Zone that begs to be explored, even as the faction war fizzles",
     summary:
-      "Edmund McMillen’s bundle — Rebirth plus every prior expansion, now with online play — is dated for consoles on 19 November. That is also Grand Theft Auto 6’s launch day. It will not win the weekend, but it is a very Isaac way to schedule a dungeon crawler against the most expensive crime game ever made.",
-    source: "Eurogamer",
-    sourceUrl: "https://www.eurogamer.net/the-binding-of-isaac-repentance-plus-online-date",
-    publishedAt: "2026-08-19T11:59:42.000Z",
-    imageUrl: "https://assetsio.gnwcdn.com/the-binding-of-isaac-repentance%2B-screen-1.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+      "GSC’s first story expansion returns players to the Chornobyl power plant and revives the Duty-versus-Freedom rivalry the base game skipped over, arriving alongside the engine-level 2.0 update. Rock Paper Shotgun says returning faces get proper context rather than fan-service cameos, though the reviewer feels the central faction war itself doesn’t quite land.",
+    source: "Rock Paper Shotgun",
+    sourceUrl: "https://www.rockpapershotgun.com/stalker-2-cost-of-hope-review",
+    publishedAt: "2026-08-19T13:00:00.000Z",
+    imageUrl:
+      "https://assetsio.gnwcdn.com/STALKER-2-Cost-of-Hope-(9).png?width=690&quality=85&format=jpg&dpr=3&auto=webp",
   },
   {
-    id: "elden-ring-switch2",
-    category: "Releases",
-    headline: "Elden Ring on Switch 2 is looking like a steady 30fps, nine days from launch",
+    id: "mortal-shell2-review",
+    category: "Reviews",
+    headline: "Mortal Shell 2 goes wide today, and RPS calls it a monumental heavy-metal Soulslike",
     summary:
-      "Tarnished Edition arrives 28 August. A Japanese preview and a new Nintendo gameplay showcase suggest docked play now holds a much steadier 30fps after earlier builds stuttered in the open world. Handheld still dips in heavy fights, and there is no 60fps mode — but the port no longer looks like a warning label.",
+      "Cold Symmetry’s sequel launches fully today on PS5, Xbox Series X|S, and PC after a beta period that topped a million players. Rock Paper Shotgun’s review calls it a “monumental” follow-up carrying the DNA of a PC-only game from decades past, comparing the leap from the original to something like The Witcher 3’s jump over The Witcher.",
+    source: "Rock Paper Shotgun",
+    sourceUrl:
+      "https://www.rockpapershotgun.com/mortal-shell-2-review-a-monumental-heavy-metal-sequel-with-the-spirit-of-a-90s-pc-game",
+    publishedAt: "2026-08-17T14:33:00.000Z",
+    timeApproximate: true,
+    imageUrl:
+      "https://assetsio.gnwcdn.com/mortal-shell-2-standing-next-to-skewered-guys.jpg?width=690&height=388&fit=crop&quality=85&format=jpg&auto=webp",
+  },
+  {
+    id: "subnautica2-coop-update",
+    category: "Releases",
+    headline: "Subnautica 2’s version 1.2 brings proximity chat, trading, and reviving your buddies",
+    summary:
+      "Unknown Worlds’ second major early-access update answers the loudest post-launch request after July’s fish-damage rework: proper co-op tools. Version 1.2 is live today with proximity voice chat, player trading, and the ability to revive downed teammates, backed by a trailer and dev vlog explaining the changes.",
+    source: "Kotaku",
+    sourceUrl:
+      "https://kotaku.com/subnautica-2-buddy-system-update-co-op-1-2-patch-notes-unknown-worlds-2000726159",
+    publishedAt: "2026-08-20T16:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/sub2.jpg",
+  },
+  {
+    id: "nintendo-download-20-aug",
+    category: "Releases",
+    headline: "This week’s Nintendo Download is stacked ahead of Elden Ring and MGS Master Collection Vol. 2",
+    summary:
+      "The eShop update previews Elden Ring: Tarnished Edition ($79.99, out 28 August with Shadow of the Erdtree bundled in) and Metal Gear Solid: Master Collection Vol. 2 ($49.99, out 27 August across both Switch generations), alongside the usual pile of indie roguelikes, puzzle games, and retro arcade collections.",
+    source: "Nintendo Life",
+    sourceUrl: "https://www.nintendolife.com/news/2026/08/nintendo-download-20th-august-north-america",
+    publishedAt: "2026-08-20T12:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://images.nintendolife.com/c1c24b83a4d9b/mgs4.900x.jpg",
+  },
+  {
+    id: "splatoon3-update-1130",
+    category: "Releases",
+    headline: "Splatoon 3 update 11.3.0 adds a Raiders tie-in weapon and rebalances the special meter",
+    summary:
+      "Players with Splatoon Raiders save data who’ve finished its campaign can now claim the new Plastic-Bottle Splattershot Replica from the lobby terminal. The patch also adjusts a batch of primary and special weapons across both Switch and Switch 2 versions, with Nintendo promising further multiplayer balance passes to come.",
     source: "Nintendo Life",
     sourceUrl:
-      "https://www.nintendolife.com/news/2026/08/elden-ring-switch-2-preview-indicates-that-performance-concerns-are-a-thing-of-the-past",
-    publishedAt: "2026-08-19T12:00:00.000Z",
+      "https://www.nintendolife.com/news/2026/08/splatoon-3-ver-11-3-0-update-out-now-here-are-the-full-patch-notes",
+    publishedAt: "2026-08-20T01:15:00.000Z",
     timeApproximate: true,
-    imageUrl: "https://images.nintendolife.com/acb640e952968/large.jpg",
-  },
-  {
-    id: "tekken-harada",
-    category: "Esports",
-    headline: "Tekken 8’s director leaves Bandai Namco for Harada’s Vs Studio",
-    summary:
-      "Kohei Ikeda, who directed Tekken 8, has joined Katsuhiro Harada at Vs Studio, the new fighting-game house working with SNK. It is a clean talent shift in a year when Harada’s post-Tekken plans have been the main rumour in the scene. Vs Studio has not shown a game yet.",
-    source: "Eurogamer",
-    sourceUrl: "https://www.eurogamer.net/tekken-8-director-joins-harada-vs-studio",
-    publishedAt: "2026-08-19T09:06:29.000Z",
-    imageUrl: "https://assetsio.gnwcdn.com/TEKKEN-8---Heihachi-Mishima-Trailer-2-29-screenshot-(1).png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
-  },
-  {
-    id: "overwatch-emerald",
-    category: "Esports",
-    headline: "Overwatch’s new Emerald rank is eating the chaos between plat and diamond",
-    summary:
-      "Season 4 slotted Emerald between Platinum and Diamond to split a huge, mismatched skill band. Early play suggests the mismatch just moved house: games swing from disciplined to sloppy, and the voice chat is worse than the ranks above. Blizzard’s idea is sound. Living there during a reset is not.",
-    source: "PC Gamer",
-    sourceUrl:
-      "https://www.pcgamer.com/games/fps/overwatchs-newest-emerald-rank-is-like-a-live-grenade-wedged-between-plat-and-diamond/",
-    publishedAt: "2026-08-19T16:19:32.000Z",
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/DUvvd3HT4Dv8z3wmtrQiHg-1920-80.jpg",
-    imageAlt: "overwatch 2 wrecking ball bug",
-  },
-  {
-    id: "dualsense-edge",
-    category: "Hardware",
-    headline: "FCC filings hint at a revised DualSense Edge sometime in 2027",
-    summary:
-      "Paperwork at the US communications regulator points to a new model of Sony’s £200 / $200 pro controller. That usually means a quiet refresh — radio tweaks, a new SKU — not a redesign. Treat it as a calendar note, not a reason to wait if the current Edge already works.",
-    source: "Eurogamer",
-    sourceUrl: "https://www.eurogamer.net/new-dualsense-edge-controller-model-2027-leak",
-    publishedAt: "2026-08-19T10:45:59.000Z",
-    imageUrl: "https://assetsio.gnwcdn.com/DualSense-Edge-Wireless-controller.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
-  },
-  {
-    id: "bethesda-rallies",
-    category: "Industry",
-    headline: "Bethesda union rallies continue: “Without us, Bethesda games aren’t Bethesda games”",
-    summary:
-      "Protests against Microsoft’s Xbox-wide layoffs ran again yesterday across North America, organised with OneBGS and the CWA. A unionised developer told Rock Paper Shotgun that day-to-day morale is low, but organising energy is “on the upswing.” Fan mods have already put protest signs and union vault suits into Fallout 4.",
-    source: "Rock Paper Shotgun",
-    sourceUrl:
-      "https://www.rockpapershotgun.com/without-us-bethesda-games-arent-bethesda-games-rallies-against-microsoft-layoffs-at-elder-scrolls-studio-continue-with-unionised-devs-morale-on-the-upswing",
-    publishedAt: "2026-08-19T11:30:00.000Z",
-    imageUrl: "https://assetsio.gnwcdn.com/bethesda-union-rallies-against-layoffs-continue-02.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
-  },
-  {
-    id: "mortal-shell-2",
-    category: "Reviews",
-    headline: "Mortal Shell 2 is a heavy-metal soulslike — and its first patch stops you stealing swords",
-    summary:
-      "Rock Paper Shotgun’s review calls Cold Symmetry’s sequel a monumental follow-up with the spirit of a 1990s PC game, not just another Elden Ring cousin. The studio has already hotfixed a bug that let ripostes yoink enemy weapons, amid claims the retail build is tougher than the beta. A rave and a patch in the same week is a very 2026 launch.",
-    source: "Rock Paper Shotgun",
-    sourceUrl:
-      "https://www.rockpapershotgun.com/amid-accusations-of-a-post-beta-difficulty-bump-mortal-shell-2-devs-patch-the-new-soulslike-to-stop-players-riposting-so-hard-they-steal-enemy-weapons",
-    publishedAt: "2026-08-19T14:16:46.000Z",
-    imageUrl: "https://assetsio.gnwcdn.com/mortal-shell-2-naylshotting-tarred-vestige.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    imageUrl: "https://images.nintendolife.com/ab415d205d952/splatoon-3.900x.jpg",
   },
 ];
 
