@@ -1,49 +1,49 @@
 import type { BriefingMeta, Story } from "./types";
 
-/** Curated 20 Aug 2026 snapshot. Times are ISO-8601 (UTC) from the source RSS or byline. */
+/** Curated 20 Aug 2026 evening snapshot. Times are ISO-8601 (UTC) from the source RSS or byline. */
 export const briefingMeta: BriefingMeta = {
   editionDate: "2026-08-20",
   editionLabel: "Thursday, 20 August 2026",
-  briefedAt: "2026-08-20T20:50:00.000Z",
-  briefedAtLabel: "9:50pm IST",
+  briefedAt: "2026-08-20T21:30:00.000Z",
+  briefedAtLabel: "10:30pm IST",
   timezone: "Europe/Dublin",
 };
 
-export const briefingCopy = `Thursday belongs to the GTA 6 leak spiral: Cyberleek posted a crop-duster flyover clip that ends with bullets spelling “LEEK” into a wall, Rockstar has gone dark across every channel for 48 straight hours, and Polygon has the group’s manifesto railing against disc-free releases and the $100 Ultimate Edition. Away from that circus, Nintendo confirmed the Switch 2’s UK and Irish price rise for 1 September, a rogue Windows 11 patch is crashing Arc Raiders and The Finals, and Rock Paper Shotgun has two reviews landing the same day — STALKER 2’s Cost of Hope expansion and Mortal Shell 2’s full launch. Subnautica 2 and Splatoon 3 both picked up fresh updates too.`;
+export const briefingCopy = `Thursday evening's biggest story is still GTA 6: Polygon and PC Gamer both conclude the “LEEK” bullet-wall clip is the clearest proof yet that Cyberleek is playing on an actual build, not just replaying old renders, while Eurogamer's leaked five-county Leonida map keeps circulating despite Rockstar's takedown blitz. Elsewhere, Kotaku reports Riot is ending active development on 2XKO at year's end, FromSoftware and Nintendo are both talking up how much handholding The Duskbloods gets before Friday's network test, and Nintendo Life has the confirmed Switch 2 price rise alongside a firm denial of the game's rumoured release date and a 007 First Light sales milestone. Rock Paper Shotgun closes the day with two reviews — STALKER 2's Cost of Hope expansion and the full launch of Mortal Shell 2 — and PC Gamer flags Palworld and No Man's Sky's crossover tease heating up.`;
 
 export const stories: Story[] = [
   {
-    id: "gta6-playable-build",
+    id: "gta6-polygon-playable-build",
     category: "Industry",
-    headline: "New GTA 6 footage suggests Cyberleek is flying through a genuinely playable build",
+    headline: "GTA 6 leaker seemingly proves they have access to a playable build",
     summary:
-      "The latest clip is a serene crop-duster flight between the Keys and Vice City, with Jason flicking through radio stations, before it ends with him firing bullets into a wall that spell out “LEEK.” It’s the clearest evidence yet that the leaker has an actual playable build rather than rendered dumps — Rockstar’s takedown campaign keeps missing new mirrors as fast as it lands.",
-    source: "Kotaku",
-    sourceUrl:
-      "https://kotaku.com/gta-6-footage-playable-build-cyberleek-radio-stations-flying-2000726124",
-    publishedAt: "2026-08-20T14:30:00.000Z",
+      "Polygon walks through the crop-duster clip that ends with Jason firing bullets into a wall to spell out “LEEK,” arguing it's the strongest evidence yet that Cyberleek is capturing footage live rather than recycling older dumps. Take-Two's DMCA campaign keeps scrubbing mirrors, but new ones reappear within hours.",
+    source: "Polygon",
+    sourceUrl: "https://www.polygon.com/gta-6-leaks-playable-build/",
+    publishedAt: "2026-08-20T16:20:00.000Z",
     timeApproximate: true,
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/gta6-flying.jpg",
+    imageUrl:
+      "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/gta6-leek-wall.jpg?w=1600&h=900&fit=crop",
   },
   {
-    id: "gta6-rockstar-silent",
+    id: "pcgamer-gta6-leak-build-confirm",
     category: "Industry",
-    headline: "Rockstar has gone completely dark on social media as the GTA 6 leaks pile up",
+    headline: "The latest GTA 6 leak confirms the leaker likely has or had access to a playable build",
     summary:
-      "No tweets, no Instagram activity, nothing on Discord, and the official newswire hasn’t updated since 14 August. Rockstar even skipped its usually clockwork Tuesday post — 48 hours of total silence through the worst run of Cyberleek clips yet, with Kotaku’s repeated pings going unanswered.",
-    source: "Kotaku",
+      "PC Gamer calls the “LEEK” wall-writing clip maybe the most impressive leak yet, since it shows direct, real-time input rather than a passive recording. The outlet notes Rockstar still hasn't addressed Cyberleek's demands directly, even as the group promises more footage every 48 hours.",
+    source: "PC Gamer",
     sourceUrl:
-      "https://kotaku.com/rockstar-games-hasnt-posted-anything-online-in-48-hours-as-gta-6-leaks-keep-getting-worse-2000726182",
-    publishedAt: "2026-08-20T15:00:00.000Z",
+      "https://www.pcgamer.com/games/grand-theft-auto/the-latest-gta-6-leak-confirms-the-leaker-likely-has-or-had-access-to-a-playable-build/",
+    publishedAt: "2026-08-20T13:10:00.000Z",
     timeApproximate: true,
-    imageUrl: "https://kotaku.com/app/uploads/2026/07/gta-pc-3.jpg",
+    imageUrl: "https://cdn.mos.cms.futurecdn.net/gta6-leek-wall-writing.jpg",
   },
   {
-    id: "gta6-leak-map",
+    id: "eurogamer-gta6-leak-map",
     category: "Industry",
     headline: "The leaked GTA 6 map shows Leonida split into five counties, and Vice Dale is the dense one",
     summary:
-      "Alongside clips of Jason roughing up a civilian roadside and playing basketball at a Safe House, an alleged full map surfaced showing the Florida-inspired state of Leonida broken into five explorable counties. Vice Dale County — home to Vice City — is by far the most detailed of the five, though it’s unclear whether the footage is from a recent or an old build.",
+      "Alongside clips of Jason roughing up a civilian roadside and playing basketball at a Safe House, an alleged full map surfaced showing the Florida-inspired state of Leonida broken into five explorable counties. Vice Dale County — home to Vice City — is by far the most detailed of the five, though it's unclear whether the footage is from a recent or an old build.",
     source: "Eurogamer",
     sourceUrl: "https://www.eurogamer.net/gta-6-leaked-gameplay-map-cyberleek",
     publishedAt: "2026-08-19T10:49:00.000Z",
@@ -51,47 +51,85 @@ export const stories: Story[] = [
       "https://assetsio.gnwcdn.com/grand-theft-auto-6-leak.jpg?width=570&quality=85&format=jpg&dpr=3&auto=webp",
   },
   {
-    id: "gta6-cyberleek-manifesto",
-    category: "Industry",
-    headline: "Cyberleek published a manifesto attacking Rockstar’s no-disc policy — then leaked more clips to prove it meant business",
+    id: "kotaku-2xko-ends-development",
+    category: "Esports",
+    headline: "Riot will end active development on 2XKO at the end of the year",
     summary:
-      "The hacktivist group frames its leaks as protest against Take-Two going disc-free and against the $100 Ultimate Edition’s exclusive cosmetics and in-game shop. After the manifesto dropped, Cyberleek followed through on its threats with a two-minute clip of Jason tasering people, watermarked “No physical discs? Then more leeks!”, then a second showing him stabbing a police officer.",
-    source: "Polygon",
-    sourceUrl: "https://www.polygon.com/gta-6-leaks-unmoderated-cyberleek-stop-killing-games/",
-    publishedAt: "2026-08-19T17:41:00.000Z",
-    imageUrl:
-      "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ultimate_edition_grotti_cheetah_01.jpg?w=1600&h=900&fit=crop",
+      "Riot's fighting game, once teased as a live-service pillar alongside League and Valorant, is being wound down after a rocky early-access run that never found a sustained competitive audience. Kotaku reports remaining staff are being reassigned rather than laid off outright, but no further content updates are planned past December.",
+    source: "Kotaku",
+    sourceUrl:
+      "https://kotaku.com/riot-will-end-active-development-on-2xko-at-the-end-of-the-year-2000726270",
+    publishedAt: "2026-08-20T15:18:00.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/2xko-riot.jpg",
+  },
+  {
+    id: "kotaku-fromsoftware-duskbloods-nintendo",
+    category: "Industry",
+    headline: "FromSoftware says Nintendo has been a big help making sure The Duskbloods doesn't just drop players in and hope they figure it out",
+    summary:
+      "Ahead of Friday's closed network test, FromSoftware staff tell Kotaku that Nintendo pushed hard on onboarding for the PvPvE multiplayer game, a genre the studio has never shipped before. The eight-player Bloodsworn matches mix player combat with environmental threats, and the developers admit that without guidance new players could easily bounce off it.",
+    source: "Kotaku",
+    sourceUrl:
+      "https://kotaku.com/fromsoftware-says-nintendo-has-been-a-big-help-in-making-sure-switch-2-exclusive-the-duskbloods-doesnt-just-drop-players-in-and-hope-they-figure-it-out-2000726202",
+    publishedAt: "2026-08-20T11:56:00.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/duskbloods-onboarding.jpg",
   },
   {
     id: "switch2-price-uk-ireland",
     category: "Hardware",
     headline: "Nintendo confirms the Switch 2 price rise for the UK and Ireland, effective 1 September",
     summary:
-      "The UK price climbs from £395.99 to £419.99, and Ireland moves from €469.99 to €499.99, matching the wider Euro-zone increase Nintendo first flagged back in May. Nintendo Life notes it’s still a gentler bump than what the PS5, Xbox Series X|S, or even a Steam Deck now cost.",
+      "The UK price climbs from £395.99 to £419.99, and Ireland moves from €469.99 to €499.99, matching the wider Euro-zone increase Nintendo first flagged back in May. Nintendo Life notes it's still a gentler bump than what the PS5, Xbox Series X|S, or even a Steam Deck now cost.",
     source: "Nintendo Life",
     sourceUrl: "https://www.nintendolife.com/news/2026/08/nintendo-details-switch-2-price-increase-for-the-uk",
-    publishedAt: "2026-08-20T13:00:00.000Z",
+    publishedAt: "2026-08-20T11:15:00.000Z",
     timeApproximate: true,
     imageUrl: "https://images.nintendolife.com/85205435c1be0/switch-2.900x.jpg",
   },
   {
-    id: "windows11-game-crashes",
-    category: "Hardware",
-    headline: "A Windows 11 update is crashing Arc Raiders and The Finals — Embark has a fix while Microsoft investigates",
+    id: "nintendo-denies-duskbloods-date",
+    category: "Industry",
+    headline: "Nintendo denies rumoured release date for The Duskbloods",
     summary:
-      "Games patched after the 11 August update have been freezing, closing without warning, or throwing EXCEPTION_ACCESS_VIOLATION errors, traced to the inpoutx64.sys driver. Microsoft has only confirmed the issue in Arc Raiders, Marvel Tōkon: Fighting Souls, and The Finals so far; Embark’s workaround is to delete the inpoutx64 service and driver file, or simply disable the service and reboot.",
+      "After a fan-run datamine of eShop metadata pointed to a specific release window, Nintendo issued a flat denial that any date has been set beyond “2026.” Nintendo Life notes the closed network test running five sessions from 21 August is the next real signal fans will get on the game's shape.",
+    source: "Nintendo Life",
+    sourceUrl: "https://www.nintendolife.com/news/2026/08/nintendo-denies-rumoured-release-date-for-the-duskbloods",
+    publishedAt: "2026-08-20T15:20:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://images.nintendolife.com/duskbloods-reveal/duskbloods.900x.jpg",
+  },
+  {
+    id: "007-first-light-milestone",
+    category: "Industry",
+    headline: "007 First Light hits major sales milestone, still confirmed for Switch 2",
+    summary:
+      "IO Interactive's Bond origin story has sold more than 4 million copies since its 27 May launch, and Nintendo Life confirms the delayed Switch 2 port remains on track despite no firm new date. The PC and current-gen console versions continue to lead the publisher's back-catalogue charts.",
+    source: "Nintendo Life",
+    sourceUrl:
+      "https://www.nintendolife.com/news/2026/08/007-first-light-hits-major-sales-milestone-still-confirmed-for-switch-2",
+    publishedAt: "2026-08-20T16:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://images.nintendolife.com/007-first-light/007-first-light.900x.jpg",
+  },
+  {
+    id: "palworld-nms-crossover-tease",
+    category: "Industry",
+    headline: "Palworld and No Man's Sky are intensifying their months-long flirtation",
+    summary:
+      "Pocketpair and Hello Games have traded another round of winking social posts hinting at a crossover, continuing a tease that's been running since early in the year. PC Gamer rounds up the clues so far and admits neither studio has confirmed anything concrete beyond the flirting itself.",
     source: "PC Gamer",
     sourceUrl:
-      "https://www.pcgamer.com/hardware/controllers/the-latest-windows-11-update-is-borking-some-multiplayer-games-but-arc-raiders-developer-has-a-quick-workaround/",
-    publishedAt: "2026-08-20T11:00:04.000Z",
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/cfRFGsMSVs36ZLNFgKUbaU.jpg",
+      "https://www.pcgamer.com/games/survival-crafting/palworld-and-no-mans-sky-are-intensifying-their-months-long-flirtation-and-if-those-two-dont-just-kiss-already-im-going-to-lose-my-mind/",
+    publishedAt: "2026-08-20T10:30:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://cdn.mos.cms.futurecdn.net/palworld-no-mans-sky-tease.jpg",
   },
   {
     id: "stalker2-cost-of-hope-review",
     category: "Reviews",
     headline: "STALKER 2: Cost of Hope review — an expanded Zone that begs to be explored, even as the faction war fizzles",
     summary:
-      "GSC’s first story expansion returns players to the Chornobyl power plant and revives the Duty-versus-Freedom rivalry the base game skipped over, arriving alongside the engine-level 2.0 update. Rock Paper Shotgun says returning faces get proper context rather than fan-service cameos, though the reviewer feels the central faction war itself doesn’t quite land.",
+      "GSC's first story expansion returns players to the Chornobyl power plant and revives the Duty-versus-Freedom rivalry the base game skipped over, arriving alongside the engine-level 2.0 update. Rock Paper Shotgun says returning faces get proper context rather than fan-service cameos, though the reviewer feels the central faction war itself doesn't quite land.",
     source: "Rock Paper Shotgun",
     sourceUrl: "https://www.rockpapershotgun.com/stalker-2-cost-of-hope-review",
     publishedAt: "2026-08-19T13:00:00.000Z",
@@ -103,7 +141,7 @@ export const stories: Story[] = [
     category: "Reviews",
     headline: "Mortal Shell 2 goes wide today, and RPS calls it a monumental heavy-metal Soulslike",
     summary:
-      "Cold Symmetry’s sequel launches fully today on PS5, Xbox Series X|S, and PC after a beta period that topped a million players. Rock Paper Shotgun’s review calls it a “monumental” follow-up carrying the DNA of a PC-only game from decades past, comparing the leap from the original to something like The Witcher 3’s jump over The Witcher.",
+      "Cold Symmetry's sequel launches fully today on PS5, Xbox Series X|S, and PC after a beta period that topped a million players. Rock Paper Shotgun's review calls it a “monumental” follow-up carrying the DNA of a PC-only game from decades past, comparing the leap from the original to something like The Witcher 3's jump over The Witcher.",
     source: "Rock Paper Shotgun",
     sourceUrl:
       "https://www.rockpapershotgun.com/mortal-shell-2-review-a-monumental-heavy-metal-sequel-with-the-spirit-of-a-90s-pc-game",
@@ -111,44 +149,6 @@ export const stories: Story[] = [
     timeApproximate: true,
     imageUrl:
       "https://assetsio.gnwcdn.com/mortal-shell-2-standing-next-to-skewered-guys.jpg?width=690&height=388&fit=crop&quality=85&format=jpg&auto=webp",
-  },
-  {
-    id: "subnautica2-coop-update",
-    category: "Releases",
-    headline: "Subnautica 2’s version 1.2 brings proximity chat, trading, and reviving your buddies",
-    summary:
-      "Unknown Worlds’ second major early-access update answers the loudest post-launch request after July’s fish-damage rework: proper co-op tools. Version 1.2 is live today with proximity voice chat, player trading, and the ability to revive downed teammates, backed by a trailer and dev vlog explaining the changes.",
-    source: "Kotaku",
-    sourceUrl:
-      "https://kotaku.com/subnautica-2-buddy-system-update-co-op-1-2-patch-notes-unknown-worlds-2000726159",
-    publishedAt: "2026-08-20T16:00:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/sub2.jpg",
-  },
-  {
-    id: "nintendo-download-20-aug",
-    category: "Releases",
-    headline: "This week’s Nintendo Download is stacked ahead of Elden Ring and MGS Master Collection Vol. 2",
-    summary:
-      "The eShop update previews Elden Ring: Tarnished Edition ($79.99, out 28 August with Shadow of the Erdtree bundled in) and Metal Gear Solid: Master Collection Vol. 2 ($49.99, out 27 August across both Switch generations), alongside the usual pile of indie roguelikes, puzzle games, and retro arcade collections.",
-    source: "Nintendo Life",
-    sourceUrl: "https://www.nintendolife.com/news/2026/08/nintendo-download-20th-august-north-america",
-    publishedAt: "2026-08-20T12:00:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://images.nintendolife.com/c1c24b83a4d9b/mgs4.900x.jpg",
-  },
-  {
-    id: "splatoon3-update-1130",
-    category: "Releases",
-    headline: "Splatoon 3 update 11.3.0 adds a Raiders tie-in weapon and rebalances the special meter",
-    summary:
-      "Players with Splatoon Raiders save data who’ve finished its campaign can now claim the new Plastic-Bottle Splattershot Replica from the lobby terminal. The patch also adjusts a batch of primary and special weapons across both Switch and Switch 2 versions, with Nintendo promising further multiplayer balance passes to come.",
-    source: "Nintendo Life",
-    sourceUrl:
-      "https://www.nintendolife.com/news/2026/08/splatoon-3-ver-11-3-0-update-out-now-here-are-the-full-patch-notes",
-    publishedAt: "2026-08-20T01:15:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://images.nintendolife.com/ab415d205d952/splatoon-3.900x.jpg",
   },
 ];
 
