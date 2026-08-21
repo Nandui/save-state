@@ -1,154 +1,116 @@
 import type { BriefingMeta, Story } from "./types";
 
-/** Curated 20 Aug 2026 evening snapshot. Times are ISO-8601 (UTC) from the source RSS or byline. */
+/** Curated 21 Aug 2026 morning snapshot. Times are ISO-8601 (UTC) from the source RSS or byline. */
 export const briefingMeta: BriefingMeta = {
-  editionDate: "2026-08-20",
-  editionLabel: "Thursday, 20 August 2026",
-  briefedAt: "2026-08-20T21:30:00.000Z",
-  briefedAtLabel: "10:30pm IST",
+  editionDate: "2026-08-21",
+  editionLabel: "Friday, 21 August 2026",
+  briefedAt: "2026-08-21T14:00:00.000Z",
+  briefedAtLabel: "3:00pm IST",
   timezone: "Europe/Dublin",
 };
 
-export const briefingCopy = `Thursday evening's biggest story is still GTA 6: Polygon and PC Gamer both conclude the “LEEK” bullet-wall clip is the clearest proof yet that Cyberleek is playing on an actual build, not just replaying old renders, while Eurogamer's leaked five-county Leonida map keeps circulating despite Rockstar's takedown blitz. Elsewhere, Kotaku reports Riot is ending active development on 2XKO at year's end, FromSoftware and Nintendo are both talking up how much handholding The Duskbloods gets before Friday's network test, and Nintendo Life has the confirmed Switch 2 price rise alongside a firm denial of the game's rumoured release date and a 007 First Light sales milestone. Rock Paper Shotgun closes the day with two reviews — STALKER 2's Cost of Hope expansion and the full launch of Mortal Shell 2 — and PC Gamer flags Palworld and No Man's Sky's crossover tease heating up.`;
+export const briefingCopy = `Friday's headline act is still GTA 6: Kotaku's Zack Zwiezen says a leaked clip of Jason piloting a plane over Vice City has him more excited than any official trailer, a sign of how far Cyberleek's dumps have spread since midweek. Riot is shutting down active development on 2XKO this December, barely eight months after launch, while FromSoftware credits Nintendo's onboarding expertise for keeping The Duskbloods newcomer-friendly ahead of this weekend's closed network test. UK Switch 2 owners now know the damage — £419.99 from 1 September — and Kotaku's review of the Metal Gear Solid 4 remaster calls it a technically flawless port undercut by an overstuffed, self-referential back half. Nintendo Life rounds out the morning with a free Switch 2 upgrade for Another Crab's Treasure, two new Final Fantasy VII Revelation convention panels, and a community-requested Tomb Raider I-III Remastered patch that adds 60fps to classic graphics mode.`;
 
 export const stories: Story[] = [
   {
-    id: "gta6-polygon-playable-build",
+    id: "kotaku-gta6-plane-leak",
     category: "Industry",
-    headline: "GTA 6 leaker seemingly proves they have access to a playable build",
+    headline: "Jason flying a plane in the new GTA 6 leak has me more excited than any previous trailer",
     summary:
-      "Polygon walks through the crop-duster clip that ends with Jason firing bullets into a wall to spell out “LEEK,” arguing it's the strongest evidence yet that Cyberleek is capturing footage live rather than recycling older dumps. Take-Two's DMCA campaign keeps scrubbing mirrors, but new ones reappear within hours.",
-    source: "Polygon",
-    sourceUrl: "https://www.polygon.com/gta-6-leaks-playable-build/",
-    publishedAt: "2026-08-20T16:20:00.000Z",
-    timeApproximate: true,
-    imageUrl:
-      "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/gta6-leek-wall.jpg?w=1600&h=900&fit=crop",
-  },
-  {
-    id: "pcgamer-gta6-leak-build-confirm",
-    category: "Industry",
-    headline: "The latest GTA 6 leak confirms the leaker likely has or had access to a playable build",
-    summary:
-      "PC Gamer calls the “LEEK” wall-writing clip maybe the most impressive leak yet, since it shows direct, real-time input rather than a passive recording. The outlet notes Rockstar still hasn't addressed Cyberleek's demands directly, even as the group promises more footage every 48 hours.",
-    source: "PC Gamer",
+      "Recent leaked gameplay footage shared by Cyberleek shows a character piloting a plane over Vice City, reinvigorating fan enthusiasm for the game. Kotaku's Zack Zwiezen writes that the clip's environmental detail is comparable to Microsoft Flight Simulator, and the footage has drawn widespread praise across social media.",
+    source: "Kotaku",
     sourceUrl:
-      "https://www.pcgamer.com/games/grand-theft-auto/the-latest-gta-6-leak-confirms-the-leaker-likely-has-or-had-access-to-a-playable-build/",
-    publishedAt: "2026-08-20T13:10:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/gta6-leek-wall-writing.jpg",
-  },
-  {
-    id: "eurogamer-gta6-leak-map",
-    category: "Industry",
-    headline: "The leaked GTA 6 map shows Leonida split into five counties, and Vice Dale is the dense one",
-    summary:
-      "Alongside clips of Jason roughing up a civilian roadside and playing basketball at a Safe House, an alleged full map surfaced showing the Florida-inspired state of Leonida broken into five explorable counties. Vice Dale County — home to Vice City — is by far the most detailed of the five, though it's unclear whether the footage is from a recent or an old build.",
-    source: "Eurogamer",
-    sourceUrl: "https://www.eurogamer.net/gta-6-leaked-gameplay-map-cyberleek",
-    publishedAt: "2026-08-19T10:49:00.000Z",
-    imageUrl:
-      "https://assetsio.gnwcdn.com/grand-theft-auto-6-leak.jpg?width=570&quality=85&format=jpg&dpr=3&auto=webp",
+      "https://kotaku.com/jason-flying-a-plane-in-the-new-gta-6-leak-has-me-more-excited-than-any-previous-trailer-2000726316",
+    publishedAt: "2026-08-20T22:05:00.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/06/gta666666.jpg",
   },
   {
     id: "kotaku-2xko-ends-development",
     category: "Esports",
-    headline: "Riot will end active development on 2XKO at the end of the year",
+    headline: "Riot is already killing its 2XKO fighting game less than a year after launching",
     summary:
-      "Riot's fighting game, once teased as a live-service pillar alongside League and Valorant, is being wound down after a rocky early-access run that never found a sustained competitive audience. Kotaku reports remaining staff are being reassigned rather than laid off outright, but no further content updates are planned past December.",
+      "Riot Games will end active development on tag-team fighting game 2XKO in December 2026, just months after its January launch, citing insufficient player retention. Servers will stay up indefinitely with offline play unaffected, all characters will be unlocked, and cosmetic purchases will be refunded.",
     source: "Kotaku",
     sourceUrl:
       "https://kotaku.com/riot-will-end-active-development-on-2xko-at-the-end-of-the-year-2000726270",
-    publishedAt: "2026-08-20T15:18:00.000Z",
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/2xko-riot.jpg",
+    publishedAt: "2026-08-20T15:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://kotaku.com/app/uploads/2026/01/2XKO.jpg",
   },
   {
     id: "kotaku-fromsoftware-duskbloods-nintendo",
     category: "Industry",
-    headline: "FromSoftware says Nintendo has been a big help making sure The Duskbloods doesn't just drop players in and hope they figure it out",
+    headline: "FromSoftware says Nintendo has been a big help in making sure Switch 2 exclusive The Duskbloods doesn't just drop players in and hope they figure it out",
     summary:
-      "Ahead of Friday's closed network test, FromSoftware staff tell Kotaku that Nintendo pushed hard on onboarding for the PvPvE multiplayer game, a genre the studio has never shipped before. The eight-player Bloodsworn matches mix player combat with environmental threats, and the developers admit that without guidance new players could easily bounce off it.",
+      "Hidetaka Miyazaki tells Kotaku that Nintendo's partnership has significantly aided development of The Duskbloods, providing feedback that improved onboarding and tutorials for a genre FromSoftware has historically left players to puzzle out on their own. Miyazaki calls Nintendo \"the right partner\" for conveying game systems clearly.",
     source: "Kotaku",
     sourceUrl:
       "https://kotaku.com/fromsoftware-says-nintendo-has-been-a-big-help-in-making-sure-switch-2-exclusive-the-duskbloods-doesnt-just-drop-players-in-and-hope-they-figure-it-out-2000726202",
-    publishedAt: "2026-08-20T11:56:00.000Z",
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/duskbloods-onboarding.jpg",
+    publishedAt: "2026-08-20T12:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/duskbloods.jpg",
   },
   {
-    id: "switch2-price-uk-ireland",
+    id: "switch2-price-uk",
     category: "Hardware",
-    headline: "Nintendo confirms the Switch 2 price rise for the UK and Ireland, effective 1 September",
+    headline: "Nintendo details Switch 2 price increase for the UK",
     summary:
-      "The UK price climbs from £395.99 to £419.99, and Ireland moves from €469.99 to €499.99, matching the wider Euro-zone increase Nintendo first flagged back in May. Nintendo Life notes it's still a gentler bump than what the PS5, Xbox Series X|S, or even a Steam Deck now cost.",
+      "Nintendo has confirmed the Switch 2 console price in the UK rises from £395.99 to £419.99 starting 1 September 2026. Nintendo Life notes the £24 bump is more modest than the increases already applied in the US ($50) and Japan (¥10,000).",
     source: "Nintendo Life",
     sourceUrl: "https://www.nintendolife.com/news/2026/08/nintendo-details-switch-2-price-increase-for-the-uk",
     publishedAt: "2026-08-20T11:15:00.000Z",
-    timeApproximate: true,
     imageUrl: "https://images.nintendolife.com/85205435c1be0/switch-2.900x.jpg",
   },
   {
-    id: "nintendo-denies-duskbloods-date",
-    category: "Industry",
-    headline: "Nintendo denies rumoured release date for The Duskbloods",
-    summary:
-      "After a fan-run datamine of eShop metadata pointed to a specific release window, Nintendo issued a flat denial that any date has been set beyond “2026.” Nintendo Life notes the closed network test running five sessions from 21 August is the next real signal fans will get on the game's shape.",
-    source: "Nintendo Life",
-    sourceUrl: "https://www.nintendolife.com/news/2026/08/nintendo-denies-rumoured-release-date-for-the-duskbloods",
-    publishedAt: "2026-08-20T15:20:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://images.nintendolife.com/duskbloods-reveal/duskbloods.900x.jpg",
-  },
-  {
-    id: "007-first-light-milestone",
-    category: "Industry",
-    headline: "007 First Light hits major sales milestone, still confirmed for Switch 2",
-    summary:
-      "IO Interactive's Bond origin story has sold more than 4 million copies since its 27 May launch, and Nintendo Life confirms the delayed Switch 2 port remains on track despite no firm new date. The PC and current-gen console versions continue to lead the publisher's back-catalogue charts.",
-    source: "Nintendo Life",
-    sourceUrl:
-      "https://www.nintendolife.com/news/2026/08/007-first-light-hits-major-sales-milestone-still-confirmed-for-switch-2",
-    publishedAt: "2026-08-20T16:00:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://images.nintendolife.com/007-first-light/007-first-light.900x.jpg",
-  },
-  {
-    id: "palworld-nms-crossover-tease",
-    category: "Industry",
-    headline: "Palworld and No Man's Sky are intensifying their months-long flirtation",
-    summary:
-      "Pocketpair and Hello Games have traded another round of winking social posts hinting at a crossover, continuing a tease that's been running since early in the year. PC Gamer rounds up the clues so far and admits neither studio has confirmed anything concrete beyond the flirting itself.",
-    source: "PC Gamer",
-    sourceUrl:
-      "https://www.pcgamer.com/games/survival-crafting/palworld-and-no-mans-sky-are-intensifying-their-months-long-flirtation-and-if-those-two-dont-just-kiss-already-im-going-to-lose-my-mind/",
-    publishedAt: "2026-08-20T10:30:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/palworld-no-mans-sky-tease.jpg",
-  },
-  {
-    id: "stalker2-cost-of-hope-review",
+    id: "kotaku-mgs4-review",
     category: "Reviews",
-    headline: "STALKER 2: Cost of Hope review — an expanded Zone that begs to be explored, even as the faction war fizzles",
+    headline: "Metal Gear Solid 4: Guns Of The Patriots: The Kotaku Review",
     summary:
-      "GSC's first story expansion returns players to the Chornobyl power plant and revives the Duty-versus-Freedom rivalry the base game skipped over, arriving alongside the engine-level 2.0 update. Rock Paper Shotgun says returning faces get proper context rather than fan-service cameos, though the reviewer feels the central faction war itself doesn't quite land.",
-    source: "Rock Paper Shotgun",
-    sourceUrl: "https://www.rockpapershotgun.com/stalker-2-cost-of-hope-review",
-    publishedAt: "2026-08-19T13:00:00.000Z",
-    imageUrl:
-      "https://assetsio.gnwcdn.com/STALKER-2-Cost-of-Hope-(9).png?width=690&quality=85&format=jpg&dpr=3&auto=webp",
+      "Kotaku's Cole Kronman finds the PS5 remaster of Metal Gear Solid 4 technically flawless at 4K/60fps, preserving the original experience faithfully. But the review argues the game itself remains structurally messy, with later chapters drowning in cutscenes that prioritize self-referential franchise commentary over the series' earlier political urgency.",
+    source: "Kotaku",
+    sourceUrl: "https://kotaku.com/metal-gear-solid-4-guns-of-the-patriots-the-kotaku-review-2000726365",
+    publishedAt: "2026-08-21T10:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/Screenshots_01.jpg",
   },
   {
-    id: "mortal-shell2-review",
-    category: "Reviews",
-    headline: "Mortal Shell 2 goes wide today, and RPS calls it a monumental heavy-metal Soulslike",
+    id: "another-crabs-treasure-switch2",
+    category: "Releases",
+    headline: "Another Crab's Treasure scores a Switch 2 edition and free upgrade",
     summary:
-      "Cold Symmetry's sequel launches fully today on PS5, Xbox Series X|S, and PC after a beta period that topped a million players. Rock Paper Shotgun's review calls it a “monumental” follow-up carrying the DNA of a PC-only game from decades past, comparing the leap from the original to something like The Witcher 3's jump over The Witcher.",
-    source: "Rock Paper Shotgun",
+      "The soulslike Another Crab's Treasure is getting a Nintendo Switch 2 edition, with existing Switch owners entitled to a free upgrade. Nintendo Life reports the new version adds higher framerates, an enhanced 1080p resolution, and improved stability with reduced load times over the original release.",
+    source: "Nintendo Life",
     sourceUrl:
-      "https://www.rockpapershotgun.com/mortal-shell-2-review-a-monumental-heavy-metal-sequel-with-the-spirit-of-a-90s-pc-game",
-    publishedAt: "2026-08-17T14:33:00.000Z",
+      "https://www.nintendolife.com/news/2026/08/another-crabs-treasure-scores-a-switch-2-edition-and-free-upgrade",
+    publishedAt: "2026-08-21T08:00:00.000Z",
     timeApproximate: true,
-    imageUrl:
-      "https://assetsio.gnwcdn.com/mortal-shell-2-standing-next-to-skewered-guys.jpg?width=690&height=388&fit=crop&quality=85&format=jpg&auto=webp",
+    imageUrl: "https://images.nintendolife.com/ba9c2142d63f9/150x110.jpg",
+  },
+  {
+    id: "ff7-revelation-panels",
+    category: "Industry",
+    headline: "Final Fantasy VII Revelation panels announced for September & October",
+    summary:
+      "Square Enix has confirmed two panels for Final Fantasy VII Revelation ahead of its Spring 2027 Switch 2 launch. Game director Naoki Hamaguchi and battle director Teruki Endo appear at PAX West on 5 September, followed by a New York Comic Con panel on 8 October with Hamaguchi and the English voice cast.",
+    source: "Nintendo Life",
+    sourceUrl:
+      "https://www.nintendolife.com/news/2026/08/final-fantasy-vii-revelation-panels-announced-for-september-and-october",
+    publishedAt: "2026-08-21T11:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://images.nintendolife.com/e8ea1b67898fe/final-fantasy-vii-revelation.900x.jpg",
+  },
+  {
+    id: "tomb-raider-remastered-update",
+    category: "Releases",
+    headline: "Tomb Raider I-III Remastered update adds three new features, includes 60fps in classic graphics mode",
+    summary:
+      "Aspyr has released a community-requested patch for Tomb Raider I-III Remastered adding a brightness slider, pickup highlighting, and 60fps performance in classic graphics mode. Nintendo Life notes the update also carries bug fixes across all platforms, with Switch 2-specific work on character clipping and physics glitches.",
+    source: "Nintendo Life",
+    sourceUrl:
+      "https://www.nintendolife.com/news/2026/08/tomb-raider-i-iii-remastered-update-adds-three-new-features-includes-60fps-in-classic-graphics-mode",
+    publishedAt: "2026-08-21T07:00:00.000Z",
+    timeApproximate: true,
+    imageUrl: "https://images.nintendolife.com/b1122c75bc68e/tomb-raider-i-iii-remastered.900x.jpg",
   },
 ];
 
