@@ -1,103 +1,170 @@
 import type { BriefingMeta, Story } from "./types";
 
-/** Curated 21 Aug 2026 evening snapshot. Times are ISO-8601 (UTC) from the source RSS or byline. */
+/** Curated 22 Aug 2026 morning snapshot. Times are ISO-8601 (UTC) from the source RSS. */
 export const briefingMeta: BriefingMeta = {
-  editionDate: "2026-08-21",
-  editionLabel: "Friday, 21 August 2026",
-  briefedAt: "2026-08-21T18:00:00.000Z",
-  briefedAtLabel: "7:00pm IST",
+  editionDate: "2026-08-22",
+  editionLabel: "Saturday, 22 August 2026",
+  briefedAt: "2026-08-22T07:22:00.000Z",
+  briefedAtLabel: "8:22am IST",
   timezone: "Europe/Dublin",
 };
 
-export const briefingCopy = `Friday evening's biggest swing is a fumble: FromSoftware pulled the plug on The Duskbloods' first Switch 2 network test after two hours of players stuck on a "failed to log in" screen, an awkward follow-up to this morning's talk of Nintendo smoothing the game's onboarding. Take-Two has moved from statements to subpoenas, PC Gamer reports, demanding Microsoft and Discord hand over records tied to the Cyberleek GTA 6 leaks by 4 September. Amazon put a stamp on its God of War recast, confirming Dave Bautista as Kratos after Ryan Hurst's injury, while Kotaku flags an AI-generated image quietly sitting inside the Spider-Man: Brand New Day art book. Overwatch players are asking where Lifeweaver went after Blizzard yanked him from select screens without a word, and on lighter notes, Nintendo Life clocks Genki's screen-equipped Manta controller blowing past its Kickstarter goal while PC Gamer spotlights a solo dev's fully walkable cyberpunk city built almost entirely out of ASCII characters.`;
+export const briefingCopy = `Saturday opens on Nintendo hardware: first looks at Call of Duty: Modern Warfare 4 on Switch 2 are landing, with Activision crediting Digital Legends for the port, while a coordinated GitHub sweep took down more than 400 Switch emulator repos. Double Fine is properly independent again, with the Psychonauts studio saying Xbox handed back its games and a Kickstarter Amnesia Fortnight letting backers vote on what comes next. Game Freak is talking up real-time battles for Pokemon Champions even as Worlds week sprinkles freebies across the rest of the franchise. Elsewhere, Microsoft's translucent green anniversary Xbox is rumoured at $900, Cyberpunk: Edgerunners season 2 finally has a date, and System 3 is fending off gen-AI accusations on its James Pond reboot.`;
 
 export const stories: Story[] = [
   {
-    id: "kotaku-duskbloods-network-test-cancelled",
+    id: "nlife-mw4-switch2-impressions",
     category: "Hardware",
-    headline: "FromSoftware gives up on today's The Duskbloods network test after two hours of failed logins",
+    headline: "First impressions of Call of Duty: Modern Warfare 4 on Switch 2 are in",
     summary:
-      "FromSoftware cancelled the first closed network test session for its Switch 2 exclusive The Duskbloods after roughly two hours of universal login failures, with players stuck on a \"Failed to log in\" error throughout the window. The studio apologised and said it would keep working on server stability, a rocky start after this morning's reporting on Nintendo's hands-on help with the game's onboarding.",
-    source: "Kotaku",
-    sourceUrl: "https://kotaku.com/fromsoftware-gives-up-duskbloods-network-test-2000726612",
-    publishedAt: "2026-08-21T13:15:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/2079.jpg",
-  },
-  {
-    id: "pcgamer-take-two-subpoena",
-    category: "Industry",
-    headline: "Take-Two kicks off GTA 6 leaker hunt with subpoenas demanding records from Microsoft and Discord",
-    summary:
-      "Take-Two has filed subpoenas in New York federal court seeking records from Microsoft and Discord tied to the \"Cyberleek\" account behind this week's wave of GTA 6 gameplay leaks. PC Gamer's Andy Chalk reports both companies have until 4 September to hand over identifying data, as Rockstar continues its public silence on the leaks.",
-    source: "PC Gamer",
-    sourceUrl:
-      "https://www.pcgamer.com/games/grand-theft-auto/take-two-kicks-off-gta-6-leaker-hunt-with-subpoenas-demanding-records-from-microsoft-and-discord/",
-    publishedAt: "2026-08-21T16:00:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/3ZfhP8k2vLmXr4wQ9tYbCd.jpg",
-  },
-  {
-    id: "kotaku-bautista-kratos",
-    category: "Industry",
-    headline: "Dave Bautista officially confirmed as the new Kratos in Amazon's God of War series",
-    summary:
-      "Amazon has confirmed Dave Bautista as the new Kratos for its live-action God of War series, replacing Ryan Hurst after a torn-bicep injury forced a recast. Kotaku's John Walker reports the production, from Battlestar Galactica's Ronald D. Moore, must now reshoot Kratos's scenes from the first four episodes, pushing a realistic premiere to late 2027.",
-    source: "Kotaku",
-    sourceUrl: "https://kotaku.com/god-of-war-dave-bautista-confirmed-new-kratos-amazon-prime-2000726603",
-    publishedAt: "2026-08-21T10:30:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/bautista.jpg",
-  },
-  {
-    id: "nintendolife-genki-manta-controller",
-    category: "Hardware",
-    headline: "Genki's new controller is chunky, boasts haptic feedback, and its own screen",
-    summary:
-      "Genki has launched the Manta, a premium controller with a built-in 2.79-inch touchscreen running its own MantaOS for on-device remapping, macros and profile switching without a companion app. Nintendo Life's Ollie Reynolds notes it supports Switch 1 & 2, PC, Mac, Android and iOS, and its Kickstarter has already blown past its $100,000 goal with over $352,000 pledged.",
+      "Early access for Modern Warfare 4 is live on other platforms, and selected creators have already been on the Switch 2 build this weekend, a week before Nintendo's open beta. Nintendo Life's round-up collects the first notes on resolution, performance, and how the pre-release Nintendo version actually feels to play.",
     source: "Nintendo Life",
-    sourceUrl:
-      "https://www.nintendolife.com/news/2026/08/genkis-new-controller-is-chunky-boasts-haptic-feedback-and-its-own-screen",
-    publishedAt: "2026-08-21T09:30:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://images.nintendolife.com/8af93b40ec8f8/genki-manta-1.900x.jpg",
+    sourceUrl: "https://www.nintendolife.com/news/2026/08/round-up-the-first-impressions-of-call-of-duty-modern-warfare-4-switch-2-are-in",
+    publishedAt: "2026-08-22T06:00:00.000Z",
+    imageUrl: "https://images.nintendolife.com/435a8663a086d/large.jpg",
   },
   {
-    id: "pcgamer-ascii-cyberpunk-city",
-    category: "Indie",
-    headline: "Lone game dev builds an explorable cyberpunk city almost entirely out of ASCII characters",
-    summary:
-      "Solo developer Grow Now Games built a fully walkable cyberpunk city rendered almost entirely in ASCII characters, using a custom ray-casting engine packed into a single HTML file. PC Gamer's Jess Kinghorn reports the playable prototype renders at 180x80 characters and is now available to try via the developer's Ko-fi.",
-    source: "PC Gamer",
-    sourceUrl:
-      "https://www.pcgamer.com/hardware/lone-game-dev-builds-an-explorable-cyberpunk-city-almost-entirely-out-of-ascii-characters/",
-    publishedAt: "2026-08-21T17:30:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/hK7wVnQ2sTzY6jLmP4rXeB.jpg",
-  },
-  {
-    id: "kotaku-spiderman-ai-artbook",
+    id: "nlife-mw4-digital-legends",
     category: "Industry",
-    headline: "AI-generated image found in Spider-Man: Brand New Day art book as film crosses $2 billion at the box office",
+    headline: "Activision reveals Digital Legends as the Switch 2 partner on Modern Warfare 4",
     summary:
-      "Marvel's official concept art book for Spider-Man: Brand New Day includes an image with warped taxis, malformed stairs and distorted buildings that fans and artists say bears the hallmarks of AI generation. Kotaku's Lewis Parker notes the discovery lands four months after Disney cut over 1,000 Marvel Studios staff, many from visual effects and concept art teams, despite the film's $2 billion haul.",
-    source: "Kotaku",
-    sourceUrl: "https://kotaku.com/spider-man-brand-new-day-ai-concept-art-book-marvel-2000726642",
-    publishedAt: "2026-08-21T14:45:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://kotaku.com/app/uploads/2026/04/spider-mannn.jpg",
+      "Infinity Ward called on Activision's Barcelona studio Digital Legends for the Switch 2 version of Modern Warfare 4, the first Call of Duty on a Nintendo platform in 13 years. The mobile specialist, bought in 2021, has already shipped work on Black Ops 6, Black Ops 7, and Warzone.",
+    source: "Nintendo Life",
+    sourceUrl: "https://www.nintendolife.com/news/2026/08/call-of-duty-modern-warfare-4-switch-2-partner-developer-revealed-by-activision",
+    publishedAt: "2026-08-22T04:00:00.000Z",
+    imageUrl: "https://images.nintendolife.com/68eed6e64897d/large.jpg",
   },
   {
-    id: "kotaku-overwatch-lifeweaver-disabled",
-    category: "Esports",
-    headline: "Has anyone seen my son Lifeweaver in Overwatch?",
+    id: "polygon-nintendo-emulator-takedowns",
+    category: "Industry",
+    headline: "Nintendo wipes out more than 400 Switch emulator repos on GitHub",
     summary:
-      "Blizzard quietly pulled support hero Lifeweaver from Overwatch's hero select screen and practice range with no explanation, leaving players guessing whether it's a game-breaking bug or fallout from a recent nerf to his Life Grip ability. Kotaku's Kenneth Shepard says the silence has fans openly asking Blizzard to just tell them what happened.",
+      "Polygon, citing TorrentFreak, says Nintendo filed several DMCA notices that removed over 400 Switch emulator-related codebases in a single-day sweep. The targets include forks of Yuzu plus copies of Suyu and Skyline, another round in Nintendo's campaign against Switch emulation.",
+    source: "Polygon",
+    sourceUrl: "https://www.polygon.com/nintendo-emulation-take-downs-piracy/",
+    publishedAt: "2026-08-21T18:49:39.000Z",
+    imageUrl: "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/switch-vs-switch-2-launch-year.jpg",
+  },
+  {
+    id: "polygon-double-fine-kickstarter",
+    category: "Indie",
+    headline: "Double Fine is back with a Kickstarter game jam after leaving Xbox",
+    summary:
+      "After its messy split from Microsoft, Psychonauts developer Double Fine launched a Kickstarter for Amnesia Fortnight 2026 so backers can vote on the studio's next game. CEO Tim Schafer broke the news on the Kinda Funny podcast, the first public next-step since the Xbox studio cuts.",
+    source: "Polygon",
+    sourceUrl: "https://www.polygon.com/double-fine-kickstarter-xbox-layoffs/",
+    publishedAt: "2026-08-21T19:48:49.000Z",
+    imageUrl: "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/psychonauts-2.jpg",
+  },
+  {
+    id: "kotaku-double-fine-owns-games",
+    category: "Industry",
+    headline: "Psychonauts developer now owns all its Xbox-era games and publishing rights",
+    summary:
+      "Double Fine says the transfer is complete: every game made under Xbox, and the publishing rights, are back with the studio. Rebekah Valentine quotes the team telling fans that buying any of their games now supports Double Fine directly.",
     source: "Kotaku",
-    sourceUrl: "https://kotaku.com/overwatch-lifeweaver-disabled-disappeared-gone-bug-2000726691",
-    publishedAt: "2026-08-21T17:45:00.000Z",
-    timeApproximate: true,
-    imageUrl: "https://kotaku.com/app/uploads/2026/08/image-81.jpg",
+    sourceUrl: "https://kotaku.com/psychonauts-dev-now-owns-all-its-games-publishing-rights-2000726713",
+    publishedAt: "2026-08-21T18:57:26.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2021/06/cdblz0xjfk311hb0yhoa.jpg",
+  },
+  {
+    id: "kotaku-pokemon-champions-realtime",
+    category: "Releases",
+    headline: "Pokemon's battle system may not stay turn-based for much longer",
+    summary:
+      "Kotaku reports Game Freak is exploring real-time battles alongside the old style in Pokemon Champions. The competitive title is meant to preserve classic turn-based play, but the studio's comments have fans reading a broader shift for the series.",
+    source: "Kotaku",
+    sourceUrl: "https://kotaku.com/pokemon-champions-turn-based-real-time-battles-winds-waves-2000726753",
+    publishedAt: "2026-08-21T20:30:47.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/04/IMG_3915-1-1280x720.jpg",
+  },
+  {
+    id: "polygon-pokemon-worlds-dlc",
+    category: "Releases",
+    headline: "Free August Pokemon DLC confirmed around Worlds week",
+    summary:
+      "The Pokemon Company is handing out free content across Champions, Unite, Go, and the TCG games for Pokemon Worlds. Polygon's Patricia Hernandez says if you play almost any current Pokemon game, there is a drop, code, or card in the mix this week.",
+    source: "Polygon",
+    sourceUrl: "https://www.polygon.com/pokemon-worlds-twitch-drops-how-to-get-tcg-pikachu-card-astronaut/",
+    publishedAt: "2026-08-22T00:00:13.000Z",
+    imageUrl: "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/pokemonxp.JPG",
+  },
+  {
+    id: "polygon-steam-weekend",
+    category: "Releases",
+    headline: "Five new Steam games to try this weekend, led by Mortal Shell 2",
+    summary:
+      "Polygon's weekend list is built around Mortal Shell 2, which it calls one of the year's best soulslikes, plus a handful of smaller PC launches. If you were saving the weekend for backlog, the new-releases pile got in the way again.",
+    source: "Polygon",
+    sourceUrl: "https://www.polygon.com/new-steam-games-august-21-2026/",
+    publishedAt: "2026-08-22T01:00:15.000Z",
+    imageUrl: "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/the-sinking-city-2-boat-travel.jpg",
+  },
+  {
+    id: "kotaku-xbox-green-900",
+    category: "Hardware",
+    headline: "The translucent green anniversary Xbox will reportedly cost $900",
+    summary:
+      "Kotaku's Ethan Gach reports the see-through green anniversary Xbox is lining up as a $900 machine, disc drive included. That puts a nostalgia special in PS5 Pro territory before it has even been formally priced.",
+    source: "Kotaku",
+    sourceUrl: "https://kotaku.com/the-gorgeous-translucent-green-anniversary-xbox-will-reportedly-cost-900-2000726617",
+    publishedAt: "2026-08-21T13:39:23.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/xbox.jpg",
+  },
+  {
+    id: "kotaku-edgerunners-s2",
+    category: "Releases",
+    headline: "Cyberpunk Edgerunners season 2 gets a release date, and it's soon",
+    summary:
+      "Netflix's Cyberpunk Edgerunners sequel has a date and a new trailer. Kotaku's Kenneth Shepard says the long-awaited second season is landing sooner than the usual anime wait, with CD Projekt's Night City back on screen this year.",
+    source: "Kotaku",
+    sourceUrl: "https://kotaku.com/cyberpunk-edgerunners-season-2-release-date-netflix-trailer-2000726622",
+    publishedAt: "2026-08-21T13:03:57.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/06/Screen-Shot-2026-06-30-at-9.22.49-AM-1280x720.jpg",
+  },
+  {
+    id: "kotaku-james-pond-ai",
+    category: "Indie",
+    headline: "Players accuse System 3 of using gen AI on its James Pond reboot",
+    summary:
+      "Promotional art for System 3's James Pond reboot, including a very wrong-looking cow, has fans calling out generative AI. The studio denied it in a blog post; Kotaku's Ash Parrish is not convinced by the defence.",
+    source: "Kotaku",
+    sourceUrl: "https://kotaku.com/james-pond-gen-ai-slop-accusations-system-3-2000726706",
+    publishedAt: "2026-08-21T20:00:03.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/Jamesponddrmaybe-1280x718.jpg",
+  },
+  {
+    id: "kotaku-gta6-still-dark",
+    category: "Industry",
+    headline: "Rockstar is still in the dark about who is leaking GTA 6, reports say",
+    summary:
+      "Despite strict internal security, multiple GTA 6 gameplay clips keep circulating and Rockstar still does not know the source, Kotaku reports. The Netflix extended look is still scheduled, while Take-Two's subpoenas to Microsoft and Discord grind on.",
+    source: "Kotaku",
+    sourceUrl: "https://kotaku.com/rockstar-games-reportedly-still-in-the-dark-about-whos-leaking-gta-6-and-how-2000726726",
+    publishedAt: "2026-08-21T19:20:07.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2025/05/0fda1e1fd9a36e1717ae92a79d156334-1280x720.jpg",
+  },
+  {
+    id: "kotaku-dog-souls",
+    category: "Indie",
+    headline: "In this soulslike, the dog will pet you back with a sword",
+    summary:
+      "Stray Dog: Nobody Cares is a PC soulslike about playing as a stray that hits back. Kotaku's Ash Parrish flags the Steam announcement as the weekend's dumbest-looking good time: you are tired of being a good boy.",
+    source: "Kotaku",
+    sourceUrl: "https://kotaku.com/dog-souls-stray-dog-nobody-cares-annoucement-pc-game-steam-2000726752",
+    publishedAt: "2026-08-21T22:00:27.000Z",
+    imageUrl: "https://kotaku.com/app/uploads/2026/08/stray-dog--1280x720.jpg",
+  },
+  {
+    id: "nlife-crabs-treasure-switch2",
+    category: "Releases",
+    headline: "Another Crab's Treasure gets a Switch 2 Edition and a free upgrade",
+    summary:
+      "Owners of the Switch version of Another Crab's Treasure can grab a free Switch 2 Edition with higher frame rate, sharper resolution, and stability fixes. Nintendo Life says the soulslike about a hermit crab is already live with the upgrade.",
+    source: "Nintendo Life",
+    sourceUrl: "https://www.nintendolife.com/news/2026/08/another-crabs-treasure-scores-a-switch-2-edition-and-free-upgrade",
+    publishedAt: "2026-08-21T00:55:00.000Z",
+    imageUrl: "https://images.nintendolife.com/ba9c2142d63f9/large.jpg",
   },
 ];
 
